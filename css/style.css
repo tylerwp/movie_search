@@ -270,3 +270,38 @@ button {
     clear: left;
   }
 }
+
+
+/* ================================= 
+  Page Results 
+==================================== */
+
+
+.results ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+
+.results li {
+    float: left;
+}
+
+.results li a {
+    display: block;
+    color: #222;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.results li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.results .active {
+    background-color: #4CAF50;
+    color:white;
+}
