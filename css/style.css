@@ -297,6 +297,14 @@ button {
     text-decoration: none;
 }
 
+.resultsCount{
+  display: block;
+    color: #222;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 .results li a:hover:not(.active) {
     background-color: #111;
 }
@@ -304,4 +312,81 @@ button {
 .results .active {
     background-color: #4CAF50;
     color:white;
+}
+
+.loader {
+    background: rgba(255,255,255,.9);
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+}  
+
+
+
+/* ================================= 
+ Single Results View 
+==================================== */
+.singleResults{
+background-image: url("../img/sR-bg.svg");
+ background-repeat: repeat-x;
+padding: 30px;
+}
+
+
+.sR-header a{
+  font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    color:#999;
+   
+}
+
+.sR-header i{
+color:white;
+}
+
+.sR-body{
+
+}
+.sR-poster{
+      float: left;
+   width: 350px;
+}
+
+.sR-poster img{
+      border: 15px solid #fff;
+}
+   
+
+.sR-copy{
+        float: left;
+    width: 50%;
+}
+.sR-DescHeader{
+      height: 150px;
+}
+
+.sR-copy h1{
+       color:white;
+       margin: 2px;
+}
+.sR-copy span{
+    color:white;
+}
+
+.sR-Desc{
+
+}
+.sR-button{
+  background-color: #222;  
+  border-radius: 5px;
+  color: white;
+  padding: .5em;
+  text-decoration: none;
+}
+.sR-button:hover{
+ background-color: #444;  
 }
