@@ -11,6 +11,7 @@ $(".search-form").on("submit",function(event){
     //prevent form submission 
     event.preventDefault();    
     pageTrack = 1;//new search so reset results page location
+    loadedCount = 10;// reset load count.
     //call ajax request function
     omdbRequest(pageTrack,false);
 });
