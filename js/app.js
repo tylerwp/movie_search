@@ -22,8 +22,8 @@ function omdbRequest(page,loadMore){
 //get search fields values
   var value = $('#search').val();
   var year = $('#year').val(); 
-
-    pageTrack++;// !! this needs to stop at 100 i think, check omdb
+  //update page tracking
+    pageTrack++;
     
  //call getJSON API //http://www.omdbapi.com/?t=star&y=&plot=short&r=json
 $('.loader').show();
