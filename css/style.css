@@ -198,6 +198,8 @@ button {
   .movie-list li {
     text-align: center;
   }
+
+
 }
 
 @media (min-width: 550px) {
@@ -333,6 +335,7 @@ button {
 background-image: url("../img/sR-bg.svg");
  background-repeat: repeat-x;
 padding: 30px;
+background-color: white;
 }
 
 
@@ -380,6 +383,14 @@ color:white;
 .sR-Desc{
 
 }
+.sR-header {
+    padding: 0px 0px 10px 0px;
+    width: 200px;
+}
+.sR-header i {
+   float: left;
+}
+
 .sR-button{
   background-color: #222;  
   border-radius: 5px;
@@ -389,4 +400,50 @@ color:white;
 }
 .sR-button:hover{
  background-color: #444;  
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 120px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+   /* background-color: rgb(0,0,0);  */
+    /* background-color: rgba(0,0,0,0.4); */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+@media (min-width: 0) and (max-width: 780px) {
+  
+  .sR-copy h1 {
+    color:#222;
+    margin: 2px;
+    font-size: 28px;
+}
+.sR-copy span {
+    color: #222;
+     font-size: 80%;
+}
+.sR-DescHeader {
+    height: 120px;
+}
+.sR-copy {
+   height: 800px;
+    width: 100%;
+}
+
 }

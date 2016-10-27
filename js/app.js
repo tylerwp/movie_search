@@ -60,7 +60,7 @@ $.ajax({
                             omdbHTML += '<li>';
                             if (d.Poster !== 'N/A') {
                               
-                                    omdbHTML += '<div class="poster-wrap"><img src="' + d.Poster + '"></div>';
+                                    omdbHTML += '<div class="poster-wrap"><a href="#" class="poster-link" data-omdbID="' + d.imdbID + '"><img src="' + d.Poster + '"></a></div>';
                                 
                                 
                             } else {
@@ -102,6 +102,36 @@ $(window).on("scroll", function() {
         }
 	}
 });
+
+
+$('.sR-header a').on('click',function(){
+    $('#myModal').hide(200);
+});
+
+
+//line 66  omdbHTML += '<div class="poster-wrap"><a href="#" class="poster-link" data-omdbID="' + d.imdbID + '"><img src="' + d.Poster + '"></a></div>';
+
+//this will not work, need to dynamicly create click funtions during creation of poster elements.
+$('.poster-link').on('click',function(){
+    var omdbID = $(this).data('imdbID');
+    
+});
+
+function showResultView(){
+
+    //this will make call to omdb api and update single results view
+
+}
+
+
+
+
+
+
+
+
+
+
 
 /*
     TODO:
