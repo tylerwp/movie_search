@@ -20,7 +20,12 @@ $(document).ready(function () {
     });
 
 
-
+/**
+* Access omdb API and render html view from json results. omdb API returns 10 results at a time.
+*
+* @param {number} page - keep track of current results page.
+* @param {bool} loadMore - boolean that loads or append results based on submit or user scroll events.  
+*/
     function omdbRequest(page, loadMore) {
 
         //get search fields values
@@ -124,8 +129,16 @@ $(document).ready(function () {
         showResultView(oID.omdbid);
     });
 
+
+
+
+/**
+* Make call to omdb api and update single results view and display model dialog.
+*
+* @param {number} omdbID - A valid IMDb ID. 
+*/
     function showResultView(omdbID) {
-        //this will make call to omdb api and update single results view
+        
         $.ajax({
             type: 'GET',
             dataType: 'text',
