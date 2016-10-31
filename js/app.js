@@ -111,7 +111,7 @@ $(document).ready(function () {
     //Hide single view dialog 
     $('.sR-header a').on('click', function (event) {
         event.preventDefault();
-        $('#myModal').hide(200);
+        $('#myModal').hide(100);
     });
 
 
@@ -163,7 +163,7 @@ $(document).ready(function () {
             },
             complete: function () {
                 //done, show dialog
-                $('#myModal').show(200);
+                $('#myModal').show(100);
             }
         });
 
